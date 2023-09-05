@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px){
+    .hero-content {
+        height: 100vh;
+        padding-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .work-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+       padding: 0 6rem;
+     }
+}
+@media screen and (max-width: 480px){
+    
+}

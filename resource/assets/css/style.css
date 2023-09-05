@@ -1,0 +1,313 @@
+/*
+Template Name : One Bak
+Template URI: https://github.com/shakelm39/paul-lapkin.git
+Author: Shakel
+Version : 1.0
+ Description : A simple portfolio template  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.container
+{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+html{
+    
+    background: #222;
+    scroll-behavior: smooth;
+}
+.btn{
+    padding: .5rem;
+    background: #000;
+    color:#fff;
+}
+.btn-full{
+    padding: .5rem;
+    background: #1bbc9b;
+    color:#fff;
+    border:.1rem #1bbc9b;
+    cursor: pointer;
+    transition: all .5s;
+}
+#heros{
+    position: relative;
+}
+.nav-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+}
+.logo-area{
+    width: 100%;
+    float: left;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    padding: 2.6rem 1rem 2.6rem 3.8rem;
+    height: 4.6em;
+}
+.logo-content{
+    padding-top: 2.6em;
+}
+.logo-content h2{
+    color: #444444;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.logo-content span{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 4rem 0;
+}
+.menu ul li{
+    display: inline-block;
+      
+}
+.menu ul li a{
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color:#444444;
+    text-transform: uppercase;
+}
+.menu ul li:hover a{
+    background: #1bbc9b;
+    color:#fff;
+}
+.hero-content{
+    background: linear-gradient(rgba(36, 35, 35, 0.7), rgba(30, 0, 0, 0.9)), url(img/hero-bg.jpg)no-repeat center top/cover;
+    height: 60vh;
+    text-align: center;
+}
+.hero-title{
+    padding: 4rem;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.hero-title h1{
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+.hero-title span{
+    color: #bab9b7;
+    font-weight: normal;
+}
+.hero-title p{
+    color: #bab9b7;
+    font-size: 1.4rem;
+}
+
+.next-btn a ion-icon{
+    position: relative;
+    font-size: 2.6rem;
+    color:#fff;
+    padding: 2.5rem;
+    animation: arrow 1s ease-in infinite;
+    
+}
+
+@keyframes arrow{
+    0% {
+        top:0;
+    }
+    45% {
+        top:1rem;
+    }
+    100% {
+        top:0;
+    }
+ }
+
+ /* portfolio section  */
+ #portfolio{
+    text-align: center;
+ }
+ .portfolio-section{
+    background: #fff;
+ }
+ .title-section{
+    margin-bottom: 1.5rem;
+ }
+ .title-section h2{
+    padding-top: 2rem;
+    font-weight: normal;
+    font-size: 2.8rem;
+ }
+ .work-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    gap:1rem;
+ }
+ .btn:hover{
+   background: #ff2a4b;
+ }
+ .search-icon:hover{
+    display: block;
+ }
+ .work-grid-item{
+    padding: 1rem;
+ }
+ /* about section  */
+ .about-section{
+    background: #16a086;
+    text-align: center;
+    
+ }
+ .about-title{
+    margin-bottom: 1rem;
+ }
+ .about-title h3{
+    color: #fff;
+    padding-top: 2.6rem;
+    font-size: 2rem;
+ }
+ .about-title span{
+    color: #d6e9e5;
+    
+ }
+ .about-grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem 6rem;
+ }
+ .about-grid-item{
+    background: #fff;
+    position: relative;
+ }
+ .about-grid-item img{
+    width: 100%;
+ }
+ .about-grid-item h3{
+    color: #444444;
+ }
+ .about-grid-item span{
+    color: #333;
+ }
+ .about-grid-item p{
+    padding: 1rem;
+    text-align: justify;
+ }
+ .social-icon{
+    position: absolute;
+    top: 7.8rem;
+    left: 2rem;
+
+ }
+ .social-icon ul{
+    list-style-type: none;
+    opacity: 0;
+ }
+ .social-icon ul li{
+    display: inline-block;
+    padding: .5rem;
+    
+ }
+ .social-icon ul li a{
+    color:#fff;
+    font-size: 2rem;
+    
+ }
+ .social-icon ul:hover{
+    opacity: 1;
+    background:#33917acb;
+    cursor: pointer;
+    
+ }
+ 
+.contact-us{
+    background: #ecf0f1;
+    text-align: center;
+}
+.contact-title{
+    padding: 2.5rem;
+}
+.contact-title h3{
+    font-size: 2.8rem;
+    color: #c2c5c6;
+}
+.contact-title span{
+    color: #9daaaa;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-md-6{
+    width: 80%;
+    margin: 0 auto;
+}
+form input[type="text"],
+input[type="email"]{
+    padding: .9rem;
+    border: .1rem solid #ddd;
+    
+}
+form textarea{
+    padding:3rem 7rem;
+    margin-top: 0.5rem;
+    border: .1rem solid #ddd;
+   margin-bottom: 1rem;
+   
+}
+.submit-btn{
+    text-align: right;
+   
+}
+.submit-btn button{
+    padding: .5rem 2.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+}
+.info-content{
+    text-align-last: left;
+    
+}
+.info-content h4{
+    font-size: 1.4rem;
+}
+.address{
+    margin: 1rem 0;
+}
+
+/* copyright  */
+.copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #2d3e50;
+}
+.copyright p{
+    color: #fff;
+    padding: 2rem;
+    
+}
+.totop-btn{
+    text-align: right;
+    padding: 1rem 2rem;
+}
+.totop-btn a ion-icon{
+    color: #fff;
+    padding: .5rem;
+    background: #16a086;
+    border:.1rem solid #16a086;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
